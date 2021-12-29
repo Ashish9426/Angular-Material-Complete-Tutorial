@@ -5,13 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { ComponentsRoutingModule } from './components-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { ButtonComponent } from './button/button.component';
+import { ButtonToggelComponent } from './button-toggel/button-toggel.component';
 
 
 
 
 
 @NgModule({
-  declarations: [ButtonComponent,],
+  declarations: [ButtonComponent, ButtonToggelComponent,],
   imports: [
     CommonModule,
     ComponentsRoutingModule,
