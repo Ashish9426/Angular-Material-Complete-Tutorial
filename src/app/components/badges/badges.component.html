@@ -1,0 +1,78 @@
+<div>
+    <span matBadge="5">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="below before">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="below after">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above before">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above after">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeSize="small">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeSize="medium">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeSize="large">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeColor="primary">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeColor="accent">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeColor="warn">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeColor="warn" matBadgeOverlap="false">Notification</span>
+</div>
+
+<div>
+    <span [matBadge]="notification" matBadgeColor="warn" matBadgeOverlap="false">Notification</span>
+</div>
+
+<div>
+    <span [matBadge]="notification1" [matBadgeHidden]="notification1==0" matBadgeColor="warn"
+        matBadgeOverlap="false">Notification</span>
+</div>
+
+<mat-divider></mat-divider>
+
+<p>
+    <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
+</p>
+
+<p>
+    <span matBadge="1" matBadgeSize="large">Text with large badge</span>
+</p>
+
+<p>
+    Button with a badge on the left
+    <button mat-raised-button color="primary" matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+        Action
+    </button>
+</p>
+
+<p>
+    Button toggles badge visibility
+    <button mat-raised-button matBadge="7" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
+        Hide
+    </button>
+</p>
+
+<p>
+    Icon with a badge
+    <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+    <!-- Include text description of the icon's meaning for screen-readers -->
+    <span class="cdk-visually-hidden">
+        Example with a home icon with overlaid badge showing the number 15
+    </span>
+</p>

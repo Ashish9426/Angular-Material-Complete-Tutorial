@@ -6,13 +6,15 @@ import { ComponentsRoutingModule } from './components-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { ButtonComponent } from './button/button.component';
 import { ButtonToggelComponent } from './button-toggel/button-toggel.component';
+import { IconsComponent } from './icons/icons.component';
+import { BadgesComponent } from './badges/badges.component';
 
 
 
 
 
 @NgModule({
-  declarations: [ButtonComponent, ButtonToggelComponent,],
+  declarations: [ButtonComponent, ButtonToggelComponent, IconsComponent, BadgesComponent,],
   imports: [
     CommonModule,
     ComponentsRoutingModule,
