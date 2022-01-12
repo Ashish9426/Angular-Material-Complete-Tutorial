@@ -12,6 +12,10 @@ import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.co
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { CardComponent } from './card/card.component';
+import { ChechBoxComponent } from './chech-box/chech-box.component';
+import { ChipsComponent } from './chips/chips.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 
@@ -26,7 +30,12 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     ProgressSpinnerComponent, 
     NavbarComponent, 
     ProgressBarComponent, 
-    SidenavComponent
+    SidenavComponent,
+    CardComponent,
+    ChechBoxComponent,
+    ChipsComponent,
+    MenuComponent
+
   ],
   imports: [
     CommonModule,
